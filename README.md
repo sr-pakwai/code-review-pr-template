@@ -1,3 +1,3 @@
 # code-review-pr-template
 
-Hello world
+Hello world, and hi to the world.
