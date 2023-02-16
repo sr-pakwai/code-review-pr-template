@@ -12,15 +12,18 @@ Specify the tests that have been run and the results, and any new tests that hav
 
 ## Security
 Consider any security implications of the code changes, including potential vulnerabilities or exposure of sensitive data.
-- [] Is it secure/free from risk? If unsure, have a threat modelling discussion.
-- [] Are external inputs validated and sanitised?
-- [] Is the logic involves sensitive, confidential, or personal information?
-    - [] Check the logs to ensure those are not leak.
-    - [] Error handling for those hotspot is handled properly to prevent accidental leak.
-- [] Is the page/api only allow for specific permission?
+- [] Is it secure/free from risk? If unsure, have a threat modeling discussion.
+- [] Are external inputs validated and sanitized?
+- [] Is the logic involves in sensitive, confidential, or personal information?
+    - [] Check the logs to ensure those are not leaking.
+    - [] Error handling for those hotspots is handled properly to prevent accidental leaks.
+- [] Is the page/API only allowed for specific user groups and permissions?
     - [] Ensure that it is protected with proper authentication or authorization.
-    - [] Include the security test such edge case.
+    - [] Include the security test such as edge case.
 - [] Is this an auditable event, such as logins, failed logins, and high-value transactions? If yes, make sure they are logged.
+- [] Are you introducing any new library?
+    - [] Ensure that the license met our legal requirement.
+    - [] Ensure that the license is safe to use. Eg. they are from a well-known and reliable source.
 
 ## Documentation
 Ensure that the changes are documented properly, including inline code comments and updates to any user-facing documentation.
